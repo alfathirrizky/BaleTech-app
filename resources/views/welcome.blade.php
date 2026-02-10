@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{ asset('icons/logo.jpeg') }}" type="image/jpeg">
+    @vite('resources/css/app.css')
+    <title>Bale Tech Solutions</title>
+</head>
+<body class="antialiased">
+    <x-navbar brand="Bale Tech Solutions"></x-navbar>
+    <section id="hero" class="flex h-screen max-w-full justify-center items-center bg-[url(/img/bg.jpg)] bg-cover bg-center" style="background-image: url('{{ asset('img/bg.jpg') }}')">
+        <div class="flex flex-col md:flex-row gap-10 items-center">
+            <img src="{{ asset('img/hero.png') }}" alt="Hero Image" class="h-96 max-w-lg mx-auto mt-8 rounded-2xl p-2 bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-center text-blue-700">Welcome to Bale Tech Solutions</h1>
+                <p class="text-gray-200 font-semibold">Innovative tech solutions for modern businesses.</p>
+                <p class="text-gray-200 text-sm">Build Websites • Mobile Apps • Software Solutions.</p>
+                <button class="bg-blue-600 hover:bg-blue-300 text-white font-semibold py-2 px-4 rounded-2xl text-xs mt-4 cursor-pointer">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="flex items-center h-screen">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col w-full gap-10">
+            <div>
+                <h2 class="text-4xl font-bold text-center">Our Services</h2>
+                <p class="text-center text-gray-600">We offer a wide range of services to help your business thrive in the digital world.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                    <p class="">Custom web applications tailored to your business needs.</p>
+                    <ul class="text-slate-600">
+                        <li class="mt-2">• Responsive Design</li>
+                        <li class="mt-2">• E-commerce Solutions</li>
+                        <li class="mt-2">• CMS Integration</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-2">Mobile Apps</h3>
+                    <p>Native and cross-platform mobile applications for iOS and Android.</p>
+                    <ul class="text-slate-600">
+                        <li class="mt-2">• User-friendly Interfaces</li>
+                        <li class="mt-2">• Performance Optimization</li>
+                        <li class="mt-2">• Regular Updates</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition-shadow duration-300">
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p>User-centered design that enhances user experience and engagement.</p>
+                    <ul class="text-slate-600">
+                        <li class="mt-2">• Wireframing & Prototyping</li>
+                        <li class="mt-2">• Visual Design</li>
+                        <li class="mt-2">• Usability Testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</body>
+</html>
